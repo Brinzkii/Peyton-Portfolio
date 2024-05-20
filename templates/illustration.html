@@ -3,6 +3,10 @@
 <div class="container-fluid text-center">
 	<h2 class="mt-4">Illustrations</h2>
 
+	{% for art in illustration %}
+		<img src={{art}} style="width: 250px"/>
+	{% endfor %}
+
 </div>
 
 {% endblock %}

@@ -1,0 +1,13 @@
+#frame {
+    z-index: 10;
+    width: 90%;
+}
+
+#art {
+    z-index: 1;
+    width: 55%;
+    position: absolute;
+    left: 85px;
+    top: 80px;
+}
+

@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container-fluid text-center">
+	<h2 class="mt-4">Random Artwork</h2>
+
+	<div class="container">
+		<div class="row">
+			{% for art in random %}
+				<!-- <div class="image-stack">
+					<div class="image-stack-item image-stack-item--top">
+						<img id="frame" src={{frames[1]}}/>
+					</div>
+					<div class="image-stack-item image-stack-item--bottom">
+						<img id="art" src={{art}}/>
+					</div>
+				</div> -->
+
+				<div class="col-4 image-stack">
+					<img id="frame" src={{frames[1]}}/>
+					<img id="art" src={{art}}/>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
